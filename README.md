@@ -35,7 +35,7 @@ Storage: Session Storage (to persist quiz results)
 
 🚀 Getting Started
 1️⃣ Clone the repository
-git clone https://github.com/your-username/quizmaster.git
+git clone (https://github.com/vivek-023/Quiz-App/tree/main)
 cd quizmaster
 
 2️⃣ Install dependencies
