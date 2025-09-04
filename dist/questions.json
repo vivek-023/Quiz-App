@@ -1,0 +1,57 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Saturn", "Jupiter", "Neptune"],
+    "correctIndex": 2
+  },
+  {
+    "id": "q2",
+    "question": "Which programming language was created by Brendan Eich?",
+    "options": ["Python", "Java", "JavaScript", "C++"],
+    "correctIndex": 2
+  },
+  {
+    "id": "q3",
+    "question": "What does API stand for in software development?",
+    "options": [
+      "Application Programming Interface",
+      "Advanced Programming Integration",
+      "Automated Program Interface",
+      "Application Process Integration"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q4",
+    "question": "Which of these is NOT a JavaScript framework?",
+    "options": ["React", "Vue", "Angular", "Django"],
+    "correctIndex": 3
+  },
+  {
+    "id": "q5",
+    "question": "What is the time complexity of binary search?",
+    "options": ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+    "correctIndex": 1
+  },
+  {
+    "id": "q6",
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": ["<link>", "<a>", "<href>", "<url>"],
+    "correctIndex": 1
+  },
+  {
+    "id": "q7",
+    "question": "What does CSS Grid primarily help with?",
+    "options": ["Color schemes", "Layout design", "Animation", "Database queries"],
+    "correctIndex": 1
+  },
+  {
+    "id": "q8",
+    "question": "Which of these is a NoSQL database?",
+    "options": ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
+    "correctIndex": 2
+  }
+]
+
+

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "question": "Which HTML tag is used to define the largest heading?",
+    "options": ["<h6>", "<heading>", "<h1>", "<head>"],
+    "correctIndex": 2
+  },
+  {
+    "id": 2,
+    "question": "In CSS, which property is used to change the text color?",
+    "options": ["font-style", "text-color", "color", "background-color"],
+    "correctIndex": 2
+  },
+  {
+    "id": 3,
+    "question": "Which JavaScript method is used to add an element at the end of an array?",
+    "options": ["push()", "add()", "append()", "insert()"],
+    "correctIndex": 0
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is NOT a Java feature?",
+    "options": ["Object-Oriented", "Platform Independent", "Pointer Manipulation", "Automatic Garbage Collection"],
+    "correctIndex": 2
+  },
+  {
+    "id": 5,
+    "question": "Which keyword in Java is used to inherit a class?",
+    "options": ["this", "implements", "extends", "super"],
+    "correctIndex": 2
+  },
+  {
+    "id": 6,
+    "question": "Which CSS layout module is best for building responsive 2D layouts?",
+    "options": ["Flexbox", "Float", "Grid", "Inline-block"],
+    "correctIndex": 2
+  },
+  {
+    "id": 7,
+    "question": "What does JVM stand for in Java?",
+    "options": ["Java Virtual Machine", "Java Variable Method", "Java Verified Mode", "Java Version Manager"],
+    "correctIndex": 0
+  },
+  {
+    "id": 8,
+    "question": "Which of the following is used in JavaScript to print messages to the console?",
+    "options": ["console.write()", "console.print()", "console.log()", "print.console()"],
+    "correctIndex": 2
+  }
+]
