@@ -1,53 +1,93 @@
-# Quiz App (React + TypeScript + Vite)
+🎯 QuizMaster – Interactive Quiz App
 
-Clean, responsive Quiz application showing one question at a time with scoring and a results summary.
 
-## Getting Started
+👉 Live Demo: https://quizmaster-vivek.netlify.app/quiz
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Run dev server:
-   ```bash
-   npm run dev
-   ```
-3. Open the printed local URL.
+📖 About the Project
 
-## Features
+QuizMaster is a modern and interactive quiz application built with React + TypeScript + Vite.
+It allows users to test their knowledge with multiple-choice questions, track their progress in real-time, and view results instantly at the end of the quiz.
 
-- Single-question flow with 4 options
-- Prevent next without a selection
-- Score tracking and final results page
-- Progress indicator
-- Restart quiz
-- Local `public/questions.json` as data source
+This project is designed to be fast, responsive, and user-friendly, making it a great starting point for anyone learning React or building gamified apps.
 
-## Tech
+✨ Features
 
-- React functional components with hooks
-- React Router (`/quiz`, `/results`)
-- TypeScript types in `src/types.ts`
-- Basic CSS in `src/App.css`
+✅ Interactive Quiz Flow – Answer one question at a time with instant feedback
+✅ Dynamic Question Loading – Questions are fetched and shuffled for variety
+✅ Progress Tracking – A sleek progress bar shows how far you’ve come
+✅ Results Page – Final score with detailed answers stored in session
+✅ Navigation System – Built with React Router (Quiz & Results pages)
+✅ Responsive UI – Works seamlessly on desktop and mobile
+✅ TypeScript Support – Strong typing for safer, scalable code
+✅ Modern Build – Powered by Vite for lightning-fast dev and production builds
 
-## Architecture
+🛠️ Tech Stack
 
-- `src/pages/QuizPage.tsx`: Loads questions, manages selection, navigation, and computes score. Stores final result in `sessionStorage`.
-- `src/pages/ResultsPage.tsx`: Reads stored result, displays per-question correctness and restart.
-- `src/components/QuestionCard.tsx`: Presentational question + options.
-- `src/components/ProgressBar.tsx`: Progress and percentage.
-- `public/questions.json`: Local question set (5–10). Replace with API if desired.
+Frontend: React 19, React Router 7, TypeScript
 
-## Replacing with Open Trivia DB (optional)
+Build Tool: Vite
 
-Swap the loader in `QuizPage` to fetch from Open Trivia DB, normalize into the `Question` shape (id, question, options[4], correctIndex).
+Styling: CSS (custom styles)
 
-## Deployment
+State Management: React hooks (useState, useEffect, etc.)
 
-Build and deploy via any static host (GitHub Pages, Netlify, Vercel):
+Storage: Session Storage (to persist quiz results)
 
-```bash
-npm run build
-```
+🚀 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/your-username/quizmaster.git
+cd quizmaster
 
-The `dist/` folder contains the production assets.
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start development server
+npm run dev
+
+
+Your app will be running at http://localhost:5173
+
+📂 Project Structure
+quiz-app/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable UI components
+│   │   ├── ProgressBar.tsx
+│   │   └── QuestionCard.tsx
+│   ├── pages/           # Page-level components
+│   │   ├── QuizPage.tsx
+│   │   └── ResultsPage.tsx
+│   ├── App.tsx          # Main app with routes
+│   ├── main.tsx         # Entry point
+│   └── types.ts         # TypeScript type definitions
+├── package.json
+├── vite.config.ts
+└── tsconfig.json
+
+📸 Screenshots
+
+Quiz Page – Answer questions with progress bar
+
+Results Page – See your score and review answers
+
+(You can add screenshots here for better presentation)
+
+🎯 Future Improvements
+
+🔹 Add a timer for each question
+
+🔹 Add categories & difficulty levels
+
+🔹 Store high scores in local storage or backend
+
+🔹 Add animations and sound effects for engagement
+
+🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+📜 License
+
+This project is open-source and available under the MIT License.
+
+👉 Live here: https://quizmaster-vivek.netlify.app/quiz
