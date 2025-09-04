@@ -54,8 +54,7 @@ npm run build
 
 
 📂 Project Structure
-csharp
-Copy code
+
 Quiz-App/
 ├── dist/                 # Production build output
 ├── node_modules/         # Dependencies
