@@ -47,8 +47,8 @@ npm install
 
 3️⃣ Start development server
 npm run dev
-
 The app will be running at http://localhost:5173
+
 4️⃣ Build for production
 npm run build
 
