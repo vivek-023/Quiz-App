@@ -9,7 +9,7 @@
 [![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-brightgreen?logo=netlify)](https://quizmaster-vivek.netlify.app/quiz)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
 
-👉 **Live Demo:** (https://quizmaster-vivek.netlify.app/quiz)  
+👉 **Live Demo:** quizmaster-vivek.netlify.app  
 
 ---
 
@@ -123,4 +123,4 @@ Open a Pull Request
 This project is licensed under the MIT License.
 See the LICENSE file for details.
 
-👉 Try it live now: https://quizmaster-vivek.netlify.app/quiz
+👉 Try it live now: quizmaster-vivek.netlify.app
