@@ -189,9 +189,9 @@ const QuizPage = () => {
       <div className={`question-container ${quizState}`}>
         <QuestionCard
           question={current}
-          selectedIndex={selectedIndex}
+          selectedIndex={selectedIndex ?? -1}   {/* ✅ Fix: fallback to -1 */}
           onSelect={handleAnswerSelect}
-          disabled={quizState !== 'question' || timeLeft === 0} // disable if time runs out
+          disabled={quizState !== 'question' || timeLeft === 0}
           showFeedback={showFeedback}
           isCorrect={isCorrect}
           correctIndex={current.correctIndex}
