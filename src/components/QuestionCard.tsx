@@ -3,7 +3,7 @@ import type { Question } from '../types';
 
 type Props = {
   question: Question;
-  selectedIndex: number | null;
+  selectedIndex: number;   // always a number now
   onSelect: (index: number) => void;
   disabled?: boolean;
   showFeedback?: boolean;
@@ -50,10 +50,9 @@ export const QuestionCard: FC<Props> = ({
             <button
               key={idx}
               className={getOptionClass(idx)}
-              // Prevent clicks if disabled
               onClick={() => { if (!disabled) onSelect(idx); }}
               aria-pressed={isSelected}
-              disabled={disabled}  // ensures timer expiry + feedback lock works
+              disabled={disabled}
             >
               <span className="option-index" aria-hidden>
                 {String.fromCharCode(65 + idx)}.

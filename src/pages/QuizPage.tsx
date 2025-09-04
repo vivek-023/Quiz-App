@@ -21,6 +21,8 @@ const QuizPage = () => {
   const [quizState, setQuizState] = useState<QuizState>('question');
   const [showFeedback, setShowFeedback] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+
+  // Timer state
   const [timeLeft, setTimeLeft] = useState<number>(30);
 
   useEffect(() => {
@@ -45,10 +47,12 @@ const QuizPage = () => {
   const total = questions.length;
   const current = questions[currentIndex];
 
+  // Reset timer on question change
   useEffect(() => {
     setTimeLeft(30);
   }, [currentIndex]);
 
+  // Timer countdown
   useEffect(() => {
     if (quizState !== 'question') return;
     if (timeLeft <= 0) {
@@ -64,7 +68,7 @@ const QuizPage = () => {
 
     const record: AnswerRecord = {
       questionId: current.id,
-      selectedIndex: selectedIndex,
+      selectedIndex: selectedIndex ?? -1,
       isCorrect: false,
     };
 
@@ -93,14 +97,15 @@ const QuizPage = () => {
 
   const handleAnswerSelect = (index: number) => {
     if (quizState !== 'question') return;
-
+    
     setSelectedIndex(index);
     setQuizState('answer');
-
+    
     const correct = index === current?.correctIndex;
     setIsCorrect(correct);
     setShowFeedback(true);
 
+    // Auto-advance after showing feedback
     setTimeout(() => {
       setShowFeedback(false);
       setQuizState('result');
@@ -109,13 +114,13 @@ const QuizPage = () => {
 
   const handleNext = () => {
     if (!current || selectedIndex === null) return;
-
+    
     const record: AnswerRecord = {
       questionId: current.id,
-      selectedIndex: selectedIndex,
+      selectedIndex: selectedIndex ?? -1,
       isCorrect: isCorrect,
     };
-
+    
     const newAnswers = [...answers];
     newAnswers[currentIndex] = record;
     setAnswers(newAnswers);
@@ -155,7 +160,7 @@ const QuizPage = () => {
       </div>
     </div>
   );
-
+  
   if (error) return (
     <div className="container">
       <div className="error">
@@ -164,7 +169,7 @@ const QuizPage = () => {
       </div>
     </div>
   );
-
+  
   if (!current) return (
     <div className="container">
       <p>No questions available.</p>
@@ -177,9 +182,9 @@ const QuizPage = () => {
         <h1>Quiz App</h1>
         <div className="timer">⏳ Time Left: {timeLeft}s</div>
       </header>
-
+      
       <ProgressBar current={currentIndex} total={total} />
-
+      
       <div className={`question-container ${quizState}`}>
         <QuestionCard
           question={current}
@@ -190,7 +195,7 @@ const QuizPage = () => {
           isCorrect={isCorrect}
           correctIndex={current.correctIndex}
         />
-
+        
         {showFeedback && (
           <div className={`feedback ${isCorrect ? 'correct' : 'incorrect'}`}>
             <div className="feedback-icon">
@@ -200,27 +205,27 @@ const QuizPage = () => {
               {isCorrect ? 'Correct!' : 'Incorrect!'}
             </div>
             <div className="feedback-explanation">
-              {isCorrect
-                ? 'Well done!'
+              {isCorrect 
+                ? 'Well done!' 
                 : `The correct answer is: ${current.options[current.correctIndex]}`
               }
             </div>
           </div>
         )}
       </div>
-
+      
       <div className="nav">
-        <button
-          onClick={handlePrev}
-          disabled={currentIndex === 0}
+        <button 
+          onClick={handlePrev} 
+          disabled={currentIndex === 0} 
           className="secondary"
         >
           Previous
         </button>
-
+        
         {quizState === 'result' && (
-          <button
-            onClick={handleNext}
+          <button 
+            onClick={handleNext} 
             className="primary"
           >
             {currentIndex + 1 < total ? 'Next Question' : 'Finish Quiz'}
