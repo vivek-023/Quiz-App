@@ -38,16 +38,21 @@ Built using **React, TypeScript, HTML, CSS, and JavaScript**, powered by **Vite*
 
 ## 🚀 Getting Started
 ```bash
-### 1️⃣ Clone the repo
+1️⃣ Clone the repo
 git clone https://github.com/vivek-023/Quiz-App.git
 cd Quiz-App
+
 2️⃣ Install dependencies
 npm install
+
 3️⃣ Start development server
 npm run dev
+
 The app will be running at http://localhost:5173
 4️⃣ Build for production
 npm run build
+
+
 📂 Project Structure
 csharp
 Copy code
@@ -77,7 +82,10 @@ Quiz-App/
 ├── tsconfig.json         # TypeScript config
 ├── vite.config.ts        # Vite configuration
 └── README.md             # Project documentation
+
+
 🔮 Future Enhancements
+
 🏆 High score storage (local storage or backend)
 
 📚 Categories & difficulty levels
