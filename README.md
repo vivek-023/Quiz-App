@@ -2,11 +2,14 @@
 
 [![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)  
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)  
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+[![HTML](https://img.shields.io/badge/HTML5-orange?logo=html5)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+[![CSS](https://img.shields.io/badge/CSS3-blue?logo=css3)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
 [![Vite](https://img.shields.io/badge/Vite-7-purple?logo=vite)](https://vitejs.dev/)  
 [![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-brightgreen?logo=netlify)](https://quizmaster-vivek.netlify.app/quiz)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
 
-👉 **Live Demo:** [quizmaster-vivek.netlify.app](https://quizmaster-vivek.netlify.app/quiz)  
+👉 **Live Demo:** (https://quizmaster-vivek.netlify.app/quiz)  
 
 ---
 
@@ -14,7 +17,7 @@
 **QuizMaster** is a modern and lightweight quiz application where users can test their knowledge through multiple-choice questions.  
 It tracks progress with a live progress bar, evaluates answers instantly, and displays results at the end.  
 
-Built with **React, TypeScript, and Vite**, the app is fast, responsive, and easy to extend.  
+Built using **React, TypeScript, HTML, CSS, and JavaScript**, powered by **Vite** for speed and performance.  
 
 ---
 
@@ -29,12 +32,14 @@ Built with **React, TypeScript, and Vite**, the app is fast, responsive, and eas
 ---
 
 ## 🛠️ Tech Stack
-- **React 19** – UI library  
-- **TypeScript** – Strong typing for maintainable code  
-- **Vite 7** – Next-gen frontend tooling  
-- **React Router 7** – Routing between Quiz & Results pages  
-- **CSS** – Custom styling for layout & components  
-- **Session Storage** – Temporary quiz result storage  
+- **HTML5** – Markup structure  
+- **CSS3** – Styling and layout  
+- **JavaScript (ES6+)** – Core logic  
+- **TypeScript** – Static typing for maintainable code  
+- **React 19** – Component-based UI library  
+- **React Router 7** – Navigation between Quiz & Results pages  
+- **Vite 7** – Next-gen frontend tooling for dev & build  
+- **Session Storage** – Store quiz results temporarily  
 
 ---
 
@@ -42,8 +47,8 @@ Built with **React, TypeScript, and Vite**, the app is fast, responsive, and eas
 
 ### 1️⃣ Clone the repo
 ```bash
-git clone https://github.com/your-username/quizmaster.git
-cd quizmaster
+git clone https://github.com/vivek-023/Quiz-App/tree/main
+cd Quiz-App
 2️⃣ Install dependencies
 bash
 Copy code
@@ -87,12 +92,6 @@ quizmaster/
 ├── tsconfig.json         # TypeScript config
 ├── vite.config.ts        # Vite configuration
 └── README.md             # Project documentation
-📸 Screenshots
-Quiz Page
-
-Results Page
-
-(To add screenshots: create a screenshots/ folder in your repo, drop images there, and update the links above.)
 
 🔮 Future Enhancements
 ⏱️ Timer for each question
@@ -124,4 +123,4 @@ Open a Pull Request
 This project is licensed under the MIT License.
 See the LICENSE file for details.
 
-👉 Try it live now: quizmaster-vivek.netlify.app
+👉 Try it live now: https://quizmaster-vivek.netlify.app/quiz
