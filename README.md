@@ -1,15 +1,7 @@
 # QuizMaster 🎯  
 
-[![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)  
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)  
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
-[![HTML](https://img.shields.io/badge/HTML5-orange?logo=html5)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
-[![CSS](https://img.shields.io/badge/CSS3-blue?logo=css3)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
-[![Vite](https://img.shields.io/badge/Vite-7-purple?logo=vite)](https://vitejs.dev/)  
-[![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-brightgreen?logo=netlify)](https://quizmaster-vivek.netlify.app/quiz)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-
-👉 **Live Demo:** https://quizmaster-vivek.netlify.app/ 
+👉 **Live Demo:** [quizmaster-vivek.netlify.app](https://quizmaster-vivek.netlify.app/)  
+👉 **GitHub Repo:** [github.com/vivek-023/Quiz-App](https://github.com/vivek-023/Quiz-App/tree/main)  
 
 ---
 
@@ -23,6 +15,7 @@ Built using **React, TypeScript, HTML, CSS, and JavaScript**, powered by **Vite*
 
 ## ✨ Features
 - 🎲 Multiple-choice quiz with shuffled questions  
+- ⏱️ **30-second timer per question** for added challenge  
 - 📊 Progress bar to track completion  
 - 📝 Instant results summary with correct & incorrect answers  
 - 💾 Session storage to persist quiz results until refresh  
@@ -44,29 +37,21 @@ Built using **React, TypeScript, HTML, CSS, and JavaScript**, powered by **Vite*
 ---
 
 ## 🚀 Getting Started
-
-### 1️⃣ Clone the repo
 ```bash
-git clone https://github.com/vivek-023/Quiz-App/tree/main
+### 1️⃣ Clone the repo
+git clone https://github.com/vivek-023/Quiz-App.git
 cd Quiz-App
 2️⃣ Install dependencies
-bash
-Copy code
 npm install
 3️⃣ Start development server
-bash
-Copy code
 npm run dev
 The app will be running at http://localhost:5173
-
 4️⃣ Build for production
-bash
-Copy code
 npm run build
 📂 Project Structure
 csharp
 Copy code
-quizmaster/
+Quiz-App/
 ├── dist/                 # Production build output
 ├── node_modules/         # Dependencies
 ├── public/               # Static assets
@@ -92,10 +77,7 @@ quizmaster/
 ├── tsconfig.json         # TypeScript config
 ├── vite.config.ts        # Vite configuration
 └── README.md             # Project documentation
-
 🔮 Future Enhancements
-⏱️ Timer for each question
-
 🏆 High score storage (local storage or backend)
 
 📚 Categories & difficulty levels
@@ -123,4 +105,5 @@ Open a Pull Request
 This project is licensed under the MIT License.
 See the LICENSE file for details.
 
-👉 Try it live now: https://quizmaster-vivek.netlify.app/
+👉 Live Demo: [quizmaster-vivek.netlify.app](https://quizmaster-vivek.netlify.app/)
+👉 GitHub Repo: [github.com/vivek-023/Quiz-App](https://github.com/vivek-023/Quiz-App/tree/main)
