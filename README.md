@@ -1,93 +1,127 @@
-🎯 QuizMaster – Interactive Quiz App
+# QuizMaster 🎯  
 
+[![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)  
+[![Vite](https://img.shields.io/badge/Vite-7-purple?logo=vite)](https://vitejs.dev/)  
+[![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-brightgreen?logo=netlify)](https://quizmaster-vivek.netlify.app/quiz)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
 
-👉 Live Demo: https://quizmaster-vivek.netlify.app/quiz
+👉 **Live Demo:** [quizmaster-vivek.netlify.app](https://quizmaster-vivek.netlify.app/quiz)  
 
-📖 About the Project
+---
 
-QuizMaster is a modern and interactive quiz application built with React + TypeScript + Vite.
-It allows users to test their knowledge with multiple-choice questions, track their progress in real-time, and view results instantly at the end of the quiz.
+## 🌟 Overview
+**QuizMaster** is a modern and lightweight quiz application where users can test their knowledge through multiple-choice questions.  
+It tracks progress with a live progress bar, evaluates answers instantly, and displays results at the end.  
 
-This project is designed to be fast, responsive, and user-friendly, making it a great starting point for anyone learning React or building gamified apps.
+Built with **React, TypeScript, and Vite**, the app is fast, responsive, and easy to extend.  
 
-✨ Features
+---
 
-✅ Interactive Quiz Flow – Answer one question at a time with instant feedback
-✅ Dynamic Question Loading – Questions are fetched and shuffled for variety
-✅ Progress Tracking – A sleek progress bar shows how far you’ve come
-✅ Results Page – Final score with detailed answers stored in session
-✅ Navigation System – Built with React Router (Quiz & Results pages)
-✅ Responsive UI – Works seamlessly on desktop and mobile
-✅ TypeScript Support – Strong typing for safer, scalable code
-✅ Modern Build – Powered by Vite for lightning-fast dev and production builds
+## ✨ Features
+- 🎲 Multiple-choice quiz with shuffled questions  
+- 📊 Progress bar to track completion  
+- 📝 Instant results summary with correct & incorrect answers  
+- 💾 Session storage to persist quiz results until refresh  
+- 📱 Fully responsive UI (mobile & desktop)  
+- ⚡ Lightning-fast builds and dev server with Vite  
 
-🛠️ Tech Stack
+---
 
-Frontend: React 19, React Router 7, TypeScript
+## 🛠️ Tech Stack
+- **React 19** – UI library  
+- **TypeScript** – Strong typing for maintainable code  
+- **Vite 7** – Next-gen frontend tooling  
+- **React Router 7** – Routing between Quiz & Results pages  
+- **CSS** – Custom styling for layout & components  
+- **Session Storage** – Temporary quiz result storage  
 
-Build Tool: Vite
+---
 
-Styling: CSS (custom styles)
+## 🚀 Getting Started
 
-State Management: React hooks (useState, useEffect, etc.)
-
-Storage: Session Storage (to persist quiz results)
-
-🚀 Getting Started
-1️⃣ Clone the repository
-git clone (https://github.com/vivek-023/Quiz-App/tree/main)
+### 1️⃣ Clone the repo
+```bash
+git clone https://github.com/your-username/quizmaster.git
 cd quizmaster
-
 2️⃣ Install dependencies
+bash
+Copy code
 npm install
-
 3️⃣ Start development server
+bash
+Copy code
 npm run dev
+The app will be running at http://localhost:5173
 
-
-Your app will be running at http://localhost:5173
-
+4️⃣ Build for production
+bash
+Copy code
+npm run build
 📂 Project Structure
-quiz-app/
-├── public/              # Static assets
-├── src/
-│   ├── components/      # Reusable UI components
+csharp
+Copy code
+quizmaster/
+├── dist/                 # Production build output
+├── node_modules/         # Dependencies
+├── public/               # Static assets
+│   └── vite.svg
+├── src/                  # Main source code
+│   ├── assets/           # Images, icons, etc.
+│   │   └── react.svg
+│   ├── components/       # Reusable components
 │   │   ├── ProgressBar.tsx
 │   │   └── QuestionCard.tsx
-│   ├── pages/           # Page-level components
+│   ├── pages/            # Page-level views
 │   │   ├── QuizPage.tsx
 │   │   └── ResultsPage.tsx
-│   ├── App.tsx          # Main app with routes
-│   ├── main.tsx         # Entry point
-│   └── types.ts         # TypeScript type definitions
-├── package.json
-├── vite.config.ts
-└── tsconfig.json
-
+│   ├── App.css           # Global styles
+│   ├── App.tsx           # Main app & routes
+│   ├── index.css         # Base styles
+│   ├── main.tsx          # Entry point
+│   ├── types.ts          # TypeScript type definitions
+│   └── vite-env.d.ts     # Vite environment types
+├── eslint.config.js      # ESLint configuration
+├── index.html            # HTML entry point
+├── package.json          # Dependencies & scripts
+├── tsconfig.json         # TypeScript config
+├── vite.config.ts        # Vite configuration
+└── README.md             # Project documentation
 📸 Screenshots
+Quiz Page
 
-Quiz Page – Answer questions with progress bar
+Results Page
 
-Results Page – See your score and review answers
+(To add screenshots: create a screenshots/ folder in your repo, drop images there, and update the links above.)
 
-(You can add screenshots here for better presentation)
+🔮 Future Enhancements
+⏱️ Timer for each question
 
-🎯 Future Improvements
+🏆 High score storage (local storage or backend)
 
-🔹 Add a timer for each question
+📚 Categories & difficulty levels
 
-🔹 Add categories & difficulty levels
+🎨 Animations and sound effects
 
-🔹 Store high scores in local storage or backend
-
-🔹 Add animations and sound effects for engagement
+🌐 API-based dynamic questions
 
 🤝 Contributing
+Contributions are welcome!
 
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
+Steps:
+
+Fork the repo
+
+Create a feature branch (git checkout -b feature/my-feature)
+
+Commit changes (git commit -m "Add new feature")
+
+Push to branch (git push origin feature/my-feature)
+
+Open a Pull Request
 
 📜 License
+This project is licensed under the MIT License.
+See the LICENSE file for details.
 
-This project is open-source and available under the MIT License.
-
-👉 Live here: https://quizmaster-vivek.netlify.app/quiz
+👉 Try it live now: quizmaster-vivek.netlify.app
