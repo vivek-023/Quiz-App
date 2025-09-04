@@ -113,5 +113,5 @@ Open a Pull Request
 This project is licensed under the MIT License.
 See the LICENSE file for details.
 
-👉 Live Demo: [quizmaster-vivek.netlify.app](https://quizmaster-vivek.netlify.app/)
-👉 GitHub Repo: [github.com/vivek-023/Quiz-App](https://github.com/vivek-023/Quiz-App/tree/main)
+👉 Live Demo: https://quizmaster-vivek.netlify.app/
+👉 GitHub Repo: https://github.com/vivek-023/Quiz-App/tree/main
